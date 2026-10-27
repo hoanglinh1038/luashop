@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liên hệ · Lụa.</title>
+  <meta name="description" content="Lụa. – shop thời trang nữ: áo, quần, chân váy và đầm màu pastel. Website bài tập Nhóm 7.">
+  <meta name="theme-color" content="#FFFBFA">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+  <a class="skip" href="#main">Bỏ qua menu</a>
+  <div class="announce">
+    <button type="button" data-open="promo"><span class="d-only">Miễn phí giao hàng cho đơn từ 499.000đ · Thành viên mới giảm 10%, bấm để nhận mã</span><span class="m-only">Giảm 10% cho đơn đầu tiên · Nhận mã</span></button>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="h-left m-only">
+        <button type="button" class="icon-btn" data-open="menu" aria-label="Mở menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h11"/></svg></button>
+        <button type="button" class="icon-btn" data-open="search" aria-label="Tìm kiếm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      </div>
+      <a class="logo" href="index.html" aria-label="Lụa. – về trang chủ">Lụa.</a>
+      <nav class="main-nav d-only" aria-label="Menu chính">
+        <a href="index.html">Home</a>
+        <div class="dd">
+          <a href="all-products.html">Shop <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></a>
+          <div class="dd-menu">
+            <a href="all-products.html">All Products</a>
+            <a href="top.html">Top</a>
+            <a href="bottom.html">Bottom</a>
+            <a href="dress.html">Dress</a>
+            <a href="cart.html">Shopping Cart</a>
+            <a href="checkout.html">Checkout</a>
+          </div>
+        </div>
+        <div class="dd">
+          <button type="button">Pages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></button>
+          <div class="dd-menu">
+            <a href="about.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+            <button type="button" data-open="wish">Yêu thích</button>
+            <a href="profile.html">Profile</a>
+            <a href="orders.html">Orders</a>
+            <a href="address.html">Address</a>
+          </div>
+        </div>
+        <a href="contact.html" class="on" aria-current="page">Contact</a>
+      </nav>
+      <form class="search d-only" action="all-products.html" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input type="search" name="q" placeholder="Tìm áo, quần, đầm..." aria-label="Tìm sản phẩm" maxlength="60">
+      </form>
+      <div class="header-icons">
+        <button type="button" class="icon-btn" data-open="wish" aria-label="Yêu thích"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z"/></svg></button>
+        <a class="icon-btn d-only" href="profile.html" aria-label="Tài khoản"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c1-3.6 3.8-5.6 7-5.6s6 2 7 5.6"/></svg></a>
+        <button type="button" class="icon-btn" data-open="bag" aria-label="Giỏ hàng"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 8h13l-1 12h-11l-1-12z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg><span class="count-dot zero" data-cart-count>0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap page">
+    <div class="subbar m-only">
+      <a href="index.html" aria-label="Quay lại"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></a>
+      <span>Contact</span>
+      <small>PAGES</small>
+    </div>
+    <nav class="crumbs d-only" aria-label="Đường dẫn"><a href="index.html">Home</a><span>/</span><b>Contact</b></nav>
+    <div class="page-intro">
+      <p class="eyebrow">Contact</p>
+      <h1>Liên hệ với chúng tôi</h1>
+      <p class="lead">Đội ngũ chăm sóc khách hàng phản hồi trong vòng 2 giờ làm việc.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <ul class="info-list">
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span><div><small>Cửa hàng</small><b>123 Lê Lợi, Quận 1, TP. Hồ Chí Minh</b></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.3a11 11 0 0 0 5.2 5.2l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2z"/></svg></span><div><small>Hotline</small><b>1900 0000 (8:00 – 22:00)</b></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><div><small>Email</small><b>cskh@shop.vn</b></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><div><small>Giờ mở cửa</small><b>Thứ 2 – Chủ nhật · 9:00 – 21:30</b></div></li>
+        </ul>
+        <div class="map" role="img" aria-label="Bản đồ minh hoạ vị trí cửa hàng 123 Lê Lợi, Quận 1">
+          <span class="map-pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span>
+          <span class="map-label">Lụa. · 123 Lê Lợi</span>
+        </div>
+      </div>
+      <form class="form-card" id="contactForm" novalidate>
+        <h2>Gửi tin nhắn</h2>
+        <div class="fields one">
+          <label class="field"><span>Họ và tên</span><input name="cName" type="text" autocomplete="name" maxlength="60"><small class="err" aria-live="polite"></small></label>
+          <label class="field"><span>Email</span><input name="cEmail" type="email" autocomplete="email" maxlength="80"><small class="err" aria-live="polite"></small></label>
+          <label class="field"><span>Chủ đề</span><select name="cTopic"><option>Tư vấn chọn size</option><option>Đơn hàng và giao hàng</option><option>Đổi trả</option><option>Hợp tác</option><option>Khác</option></select></label>
+          <label class="field"><span>Nội dung</span><textarea name="cMsg" rows="5" maxlength="1000" placeholder="Ví dụ: Mình cao 1m60, nặng 50kg thì mặc đầm size nào vừa ạ?"></textarea><small class="err" aria-live="polite"></small></label>
+        </div>
+        <button class="btn btn-pink btn-block">Gửi tin nhắn</button>
+        <p class="note">Bản nháp: tin nhắn chưa được gửi đi thật.</p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="lien-he">
+    <div class="wrap">
+      <div class="f-top">
+        <div>
+          <a class="logo" href="index.html">Lụa.</a>
+          <p>Nhận tin bộ sưu tập mới và ưu đãi riêng cho thành viên.</p>
+        </div>
+        <form class="f-news" id="newsForm">
+          <input type="email" required placeholder="Email của bạn" aria-label="Email nhận tin">
+          <button class="btn btn-light">Đăng ký</button>
+        </form>
+      </div>
+      <div class="f-cols">
+        <div>
+          <h4>SHOP</h4>
+          <a href="all-products.html">All Products</a>
+          <a href="top.html">Top</a>
+          <a href="bottom.html">Bottom</a>
+          <a href="dress.html">Dress</a>
+        </div>
+        <div>
+          <h4>PAGES</h4>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <button type="button" data-open="wish">Yêu thích</button>
+          <a href="profile.html">Profile</a>
+          <a href="orders.html">Orders</a>
+          <a href="address.html">Address</a>
+        </div>
+        <div>
+          <h4>CONTACT</h4>
+          <a href="contact.html">Liên hệ</a>
+          <span>Hotline 1900 0000</span>
+          <span>cskh@shop.vn</span>
+        </div>
+        <div>
+          <h4>THEO DÕI</h4>
+          <span>Facebook</span>
+          <span>Instagram</span>
+          <span>TikTok</span>
+        </div>
+      </div>
+      <div class="f-bottom">
+        <span>© 2026 Lụa. · Website bài tập Dự án 1 – Nhóm 7 · Sản phẩm và giá minh hoạ</span>
+        <span>COD · Chuyển khoản · Ví điện tử · Thẻ</span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="menu" class="drawer drawer-left" aria-label="Menu">
+    <div class="drawer-head">
+      <a class="logo" href="index.html">Lụa.</a>
+      <button type="button" class="x" data-close aria-label="Đóng"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <nav class="menu-nav" aria-label="Menu">
+      <a class="menu-top" href="index.html">Home</a>
+      <p class="menu-label">Shop</p>
+      <a href="all-products.html">All Products</a>
+      <a href="top.html">Top</a>
+      <a href="bottom.html">Bottom</a>
+      <a href="dress.html">Dress</a>
+      <a href="cart.html">Shopping Cart</a>
+      <a href="checkout.html">Checkout</a>
+      <p class="menu-label">Pages</p>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <button type="button" data-open="wish">Yêu thích</button>
+      <a href="orders.html">Orders</a>
+      <a href="address.html">Address</a>
+      <a class="menu-top" href="contact.html">Contact</a>
+    </nav>
+    <div class="btn-row">
+      <a class="btn btn-pink btn-sm" href="profile.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c1-3.6 3.8-5.6 7-5.6s6 2 7 5.6"/></svg> Tài khoản của tôi</a>
+    </div>
+  </dialog>
+
+  <dialog id="search" class="search-sheet" aria-label="Tìm kiếm">
+    <form action="all-products.html" role="search">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input type="search" name="q" placeholder="Tìm áo, quần, đầm..." aria-label="Tìm sản phẩm" maxlength="60">
+      </div>
+      <button class="btn btn-pink btn-sm">Tìm</button>
+    </form>
+  </dialog>
+
+  <dialog id="quick" class="modal sheet" aria-labelledby="quickName">
+    <form id="quickForm">
+      <button type="button" class="x" data-close aria-label="Đóng"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div class="q-head">
+        <img id="quickImg" src="images/p11.jpg" alt="" width="720" height="960">
+        <div>
+          <p class="card-cat" id="quickCat"></p>
+          <h3 id="quickName"></h3>
+          <p class="card-price" id="quickPrice"></p>
+        </div>
+      </div>
+      <div class="q-row"><span>Size: <b id="quickSizeLabel"></b></span><button type="button" class="link" data-open="sizeGuide">Hướng dẫn chọn size</button></div>
+      <div class="choice" id="quickSizes" role="radiogroup" aria-label="Chọn size"></div>
+      <div class="q-row"><span>Màu: <b id="quickColorLabel"></b></span></div>
+      <div class="choice" id="quickColors" role="radiogroup" aria-label="Chọn màu"></div>
+      <div class="q-buy">
+        <div class="qty">
+          <button type="button" data-step="-1" aria-label="Bớt 1">−</button>
+          <input id="quickQty" value="1" inputmode="numeric" aria-label="Số lượng">
+          <button type="button" data-step="1" aria-label="Thêm 1">+</button>
+        </div>
+        <button class="btn btn-pink" id="quickSubmit">Thêm vào giỏ</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="bag" class="drawer drawer-right" aria-labelledby="bagTitle">
+    <div class="drawer-head">
+      <h2 id="bagTitle">Giỏ hàng (0)</h2>
+      <button type="button" class="x" data-close aria-label="Đóng"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="ship-note" id="shipNote" hidden>
+      <span id="shipText"></span>
+      <div class="ship-bar"><span id="shipBar"></span></div>
+    </div>
+    <div class="rows" id="bagRows"></div>
+    <div class="bag-foot" id="bagFoot" hidden>
+      <div class="bag-total"><span>Tạm tính</span><b id="bagTotal">0đ</b></div>
+      <p class="note">Phí giao hàng và mã giảm giá tính ở bước thanh toán.</p>
+      <a class="btn btn-pink btn-block" href="checkout.html">Thanh toán</a>
+      <a class="btn btn-line btn-block" href="cart.html">Xem giỏ hàng</a>
+      <button type="button" class="link" data-close>Tiếp tục mua sắm</button>
+    </div>
+  </dialog>
+
+  <dialog id="wish" class="drawer drawer-right" aria-labelledby="wishTitle">
+    <div class="drawer-head">
+      <h2 id="wishTitle">Yêu thích (0)</h2>
+      <button type="button" class="x" data-close aria-label="Đóng"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="rows" id="wishRows"></div>
+  </dialog>
+
+  <dialog id="sizeGuide" class="modal" aria-labelledby="sizeTitle">
+    <button type="button" class="x" data-close aria-label="Đóng"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <h2 id="sizeTitle">Bảng size</h2>
+    <p class="lead">Đối chiếu chiều cao và cân nặng. Nếu nằm giữa hai size, nên chọn size lớn hơn.</p>
+    <table class="size-table">
+      <thead><tr><th>Size</th><th>Chiều cao</th><th>Cân nặng</th><th>Vòng eo</th></tr></thead>
+      <tbody>
+        <tr><td>S</td><td>1m50 – 1m55</td><td>40 – 45 kg</td><td>62 – 66 cm</td></tr>
+        <tr><td>M</td><td>1m55 – 1m60</td><td>45 – 50 kg</td><td>66 – 70 cm</td></tr>
+        <tr><td>L</td><td>1m60 – 1m65</td><td>50 – 55 kg</td><td>70 – 74 cm</td></tr>
+        <tr><td>XL</td><td>1m65 – 1m70</td><td>55 – 62 kg</td><td>74 – 78 cm</td></tr>
+      </tbody>
+    </table>
+  </dialog>
+
+  <dialog id="promo" class="promo" aria-labelledby="promoTitle">
+    <button type="button" class="x" data-close aria-label="Đóng"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <img src="images/promo.jpg" alt="" width="1000" height="400">
+    <div class="promo-body">
+      <p class="eyebrow">Thành viên mới</p>
+      <h3 id="promoTitle">Giảm 10% cho đơn đầu tiên</h3>
+      <form id="promoForm" class="stack">
+        <p>Để lại email, Lụa. gửi mã giảm giá và báo sớm khi có bộ sưu tập mới.</p>
+        <input type="email" required placeholder="Email của bạn" aria-label="Email nhận mã">
+        <button class="btn btn-pink">Nhận mã giảm giá</button>
+        <button type="button" class="later" data-close>Để sau</button>
+      </form>
+      <div id="promoDone" class="stack" hidden>
+        <p>Mã giảm 10% của bạn, nhập ở bước thanh toán:</p>
+        <span class="code">LUA10</span>
+        <button type="button" class="btn btn-line" data-close>Tiếp tục mua sắm</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span class="toast-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
+    <div><b id="toastTitle"></b><small id="toastText"></small></div>
+    <button type="button" class="x" data-toast-close aria-label="Đóng"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <div class="toast-actions" id="toastActions">
+      <button type="button" class="btn btn-line btn-sm" data-toast-close>Mua tiếp</button>
+      <button type="button" class="btn btn-pink btn-sm" data-open="bag">Xem giỏ hàng</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>

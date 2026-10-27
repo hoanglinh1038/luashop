@@ -1,18 +1,6 @@
-/* Lụa. – Nhóm 7 · Trang mua sắm (việc 10: Home, All Products, Top, Bottom, Dress, Quick add)
-   Giỏ hàng lưu trong localStorage, key "lua_cart_v1". Anh Tú đọc cùng key cho Shopping Cart và Checkout. */
+/* Lụa. – Nhóm 7 · Phần dùng chung cho mọi trang (việc 9, 10: header, Quick add, giỏ hàng nhanh, yêu thích)
+   Giỏ hàng lưu trong localStorage, key "lua_cart_v1". pages.js (việc 11, 12) đọc cùng key cho Shopping Cart và Checkout. */
 'use strict';
-
-/* Trang của Anh Tú (việc 11, 12). File nào đã có trong repo thì link tới trang đó tự hiện ra. */
-const PAGES = {
-  cart: 'cart.html',
-  checkout: 'checkout.html',
-  about: 'about.html',
-  contact: 'contact.html',
-  faq: 'faq.html',
-  profile: 'profile.html',
-  orders: 'orders.html',
-  address: 'address.html'
-};
 
 const CART_KEY = 'lua_cart_v1';
 const WISH_KEY = 'lua_wish_v1';
@@ -82,6 +70,7 @@ function showCount() {
 function saveCart() {
   const ok = write(CART_KEY, cart);
   showCount();
+  document.dispatchEvent(new CustomEvent('lua:cart')); // trang Giỏ hàng, Thanh toán vẽ lại khi giỏ thay đổi
   return ok;
 }
 
@@ -363,19 +352,4 @@ $('#newsForm').addEventListener('submit', e => {
   showToast('Đã ghi nhận email của bạn', 'Lụa. sẽ báo khi có bộ sưu tập mới.');
 });
 
-/* ---------- Hiện link tới trang của Anh Tú khi file đã có ---------- */
-async function linkPages() {
-  let found = {};
-  try { found = JSON.parse(sessionStorage.getItem('lua_pages') || '{}'); } catch { found = {}; }
-  if (location.protocol.startsWith('http')) {
-    await Promise.all(Object.keys(PAGES).filter(k => !found[k]).map(k =>
-      fetch(PAGES[k], { method: 'HEAD', cache: 'no-store' }).then(r => { found[k] = r.ok; }, () => { found[k] = false; })));
-  }
-  const ok = Object.fromEntries(Object.entries(found).filter(([, v]) => v));
-  try { sessionStorage.setItem('lua_pages', JSON.stringify(ok)); } catch { /* bỏ qua */ }
-  $$('[data-page-link]').forEach(el => { el.hidden = !ok[el.dataset.pageLink]; });
-  $$('[data-page-upgrade]').forEach(el => { if (ok[el.dataset.pageUpgrade]) el.href = PAGES[el.dataset.pageUpgrade]; });
-}
-
 showCount();
-linkPages();
