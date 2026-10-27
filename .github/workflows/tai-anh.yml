@@ -14,14 +14,10 @@ jobs:
       - name: Tai anh
         run: |
           mkdir -p /tmp/pub/out
-          while read -r label id size; do
+          while read -r label url size; do
             case "$label" in ''|'#'*) continue;; esac
             size=${size:-360}
-            loc=$(curl -s -o /dev/null -w '%{redirect_url}' "https://unsplash.com/photos/$id/download?force=true")
-            if [ -z "$loc" ]; then echo "$label $id khong-chuyen-huong" >> /tmp/pub/out/failed.txt; continue; fi
-            case "$loc" in *\?*) sep='&';; *) sep='?';; esac
-            curl -sSL --fail -o "/tmp/pub/out/${label}__${id}.jpg" "${loc}${sep}w=${size}&q=82&fm=jpg" || echo "$label $id loi-tai" >> /tmp/pub/out/failed.txt
-            echo "$label $id $loc" >> /tmp/pub/out/sources.txt
+            curl -sSL --fail -A "Mozilla/5.0" -o "/tmp/pub/out/${label}.jpg" "${url}?w=${size}&q=80&fm=jpg&fit=max" || echo "$label $url loi-tai" >> /tmp/pub/out/failed.txt
           done < tools/photos.txt
           ls /tmp/pub/out | wc -l
       - name: Day len nhanh anh-ung-vien
