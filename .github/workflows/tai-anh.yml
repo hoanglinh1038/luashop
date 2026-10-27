@@ -24,12 +24,6 @@ jobs:
             echo "$label $id $loc" >> /tmp/pub/out/sources.txt
           done < tools/photos.txt
           ls /tmp/pub/out | wc -l
-      - name: Bang xem truoc
-        run: |
-          which montage || (sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick)
-          cd /tmp/pub/out
-          ls *.jpg | sort -V | split -l 20 - /tmp/list_
-          for f in /tmp/list_*; do montage -label '%t' $(cat "$f") -geometry 280x373+6+6 -tile 5x -pointsize 15 -background white "/tmp/pub/sheet_$(basename "$f").jpg"; done
       - name: Day len nhanh anh-ung-vien
         run: |
           git config user.name github-actions
