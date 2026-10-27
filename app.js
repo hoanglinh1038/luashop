@@ -18,27 +18,26 @@ const CART_KEY = 'lua_cart_v1';
 const WISH_KEY = 'lua_wish_v1';
 const FREE_SHIP = 499000;
 
-const COLORS = { 'Đen': '#231A1F', 'Trắng kem': '#F3ECE2', 'Be': '#D8C3A1', 'Xanh rêu': '#5E6B3C', 'Hồng': '#E4A3B4' };
+const COLORS = { 'Đen': '#231A1F', 'Trắng kem': '#F3ECE2', 'Be': '#D8C3A1', 'Xanh rêu': '#5E6B3C', 'Hồng': '#E4A3B4', 'Xanh jean': '#8EAAC4', 'Vàng': '#E3B23C', 'Cam đất': '#C4664C' };
 const CATEGORY_WORDS = { top: 'áo top', bottom: 'bottom', dress: 'đầm váy dress' };
 const PRICE_RANGES = { lt300: [0, 299999], mid: [300000, 500000], gt500: [500001, Infinity] };
 const PRICE_LABELS = { lt300: 'Dưới 300.000đ', mid: '300.000đ – 500.000đ', gt500: 'Trên 500.000đ' };
 const ALL_SIZES = ['S', 'M', 'L', 'XL'];
-const BASIC = ['Đen', 'Be', 'Xanh rêu'];
 
 /* 12 sản phẩm theo mockup, xếp theo thứ tự "Mới nhất". Giá là số VND. */
 const PRODUCTS = [
-  { id: 'lua-1', name: 'Áo thun cotton basic', category: 'top', price: 249000, image: 'images/p01.svg', sizes: ALL_SIZES, colors: ['Đen', 'Trắng kem', 'Xanh rêu'], badge: 'Mới' },
-  { id: 'lua-9', name: 'Đầm suông cổ vuông', category: 'dress', price: 559000, image: 'images/p09.svg', sizes: ALL_SIZES, colors: BASIC },
-  { id: 'lua-5', name: 'Quần tây ống suông', category: 'bottom', price: 489000, image: 'images/p05.svg', sizes: ALL_SIZES, colors: BASIC },
-  { id: 'lua-2', name: 'Sơ mi linen tay dài', category: 'top', price: 459000, image: 'images/p02.svg', sizes: ALL_SIZES, colors: ['Trắng kem', 'Be', 'Xanh rêu'] },
-  { id: 'lua-6', name: 'Chân váy midi xếp ly', category: 'bottom', price: 399000, image: 'images/p06.svg', sizes: ALL_SIZES, colors: BASIC, badge: 'Mới' },
-  { id: 'lua-10', name: 'Đầm hoa nhí tay phồng', category: 'dress', price: 599000, oldPrice: 699000, image: 'images/p10.svg', sizes: ALL_SIZES, colors: ['Hồng', 'Be', 'Đen'] },
-  { id: 'lua-3', name: 'Áo khoác denim', category: 'top', price: 690000, oldPrice: 790000, image: 'images/p03.svg', sizes: ALL_SIZES, colors: BASIC },
-  { id: 'lua-7', name: 'Quần jean ống rộng', category: 'bottom', price: 529000, image: 'images/p07.svg', sizes: ALL_SIZES, colors: BASIC },
-  { id: 'lua-11', name: 'Đầm lụa hai dây', category: 'dress', price: 649000, image: 'images/p11.svg', sizes: ALL_SIZES, colors: ['Be', 'Đen', 'Hồng'], badge: 'Mới' },
-  { id: 'lua-4', name: 'Áo polo dệt kim', category: 'top', price: 329000, image: 'images/p04.svg', sizes: ['S', 'M', 'L'], colors: BASIC },
-  { id: 'lua-8', name: 'Chân váy chữ A', category: 'bottom', price: 349000, image: 'images/p08.svg', sizes: ['S', 'M', 'L'], colors: BASIC },
-  { id: 'lua-12', name: 'Đầm sơ mi thắt eo', category: 'dress', price: 579000, image: 'images/p12.svg', sizes: ALL_SIZES, colors: BASIC }
+  { id: 'lua-1', name: 'Áo thun cotton basic', category: 'top', price: 249000, image: 'images/p01.jpg', sizes: ALL_SIZES, colors: ['Hồng', 'Trắng kem', 'Đen'], badge: 'Mới' },
+  { id: 'lua-9', name: 'Đầm maxi cổ bèo', category: 'dress', price: 559000, image: 'images/p09.jpg', sizes: ALL_SIZES, colors: ['Hồng', 'Be', 'Đen'] },
+  { id: 'lua-5', name: 'Quần tây ống suông', category: 'bottom', price: 489000, image: 'images/p05.jpg', sizes: ALL_SIZES, colors: ['Xanh rêu', 'Đen', 'Be'] },
+  { id: 'lua-2', name: 'Sơ mi linen tay dài', category: 'top', price: 459000, image: 'images/p02.jpg', sizes: ALL_SIZES, colors: ['Trắng kem', 'Be', 'Xanh rêu'] },
+  { id: 'lua-6', name: 'Chân váy midi xếp ly', category: 'bottom', price: 399000, image: 'images/p06.jpg', sizes: ALL_SIZES, colors: ['Trắng kem', 'Đen', 'Be'], badge: 'Mới' },
+  { id: 'lua-10', name: 'Đầm hoa nhí xếp tầng', category: 'dress', price: 599000, oldPrice: 699000, image: 'images/p10.jpg', sizes: ALL_SIZES, colors: ['Trắng kem', 'Hồng', 'Be'] },
+  { id: 'lua-3', name: 'Áo khoác denim', category: 'top', price: 690000, oldPrice: 790000, image: 'images/p03.jpg', sizes: ALL_SIZES, colors: ['Xanh jean', 'Đen', 'Be'] },
+  { id: 'lua-7', name: 'Quần jean ống rộng', category: 'bottom', price: 529000, image: 'images/p07.jpg', sizes: ALL_SIZES, colors: ['Xanh jean', 'Đen', 'Be'] },
+  { id: 'lua-11', name: 'Đầm lụa hai dây', category: 'dress', price: 649000, image: 'images/p11.jpg', sizes: ALL_SIZES, colors: ['Trắng kem', 'Đen', 'Hồng'], badge: 'Mới' },
+  { id: 'lua-4', name: 'Áo polo dệt kim', category: 'top', price: 329000, image: 'images/p04.jpg', sizes: ['S', 'M', 'L'], colors: ['Vàng', 'Be', 'Đen'] },
+  { id: 'lua-8', name: 'Chân váy chữ A', category: 'bottom', price: 349000, image: 'images/p08.jpg', sizes: ['S', 'M', 'L'], colors: ['Đen', 'Be', 'Xanh rêu'] },
+  { id: 'lua-12', name: 'Đầm sơ mi thắt eo', category: 'dress', price: 579000, image: 'images/p12.jpg', sizes: ALL_SIZES, colors: ['Cam đất', 'Be', 'Đen'] }
 ];
 const NEW_ARRIVALS = ['lua-11', 'lua-2', 'lua-6', 'lua-3'];
 
@@ -111,7 +110,7 @@ function card(p) {
     : p.badge ? `<span class="badge">${p.badge}</span>` : '';
   return `<article class="card">
     <div class="card-media">
-      <button type="button" class="card-img" data-quick="${p.id}" aria-label="Chọn size cho ${p.name}"><img src="${p.image}" alt="${p.name}" width="600" height="800" loading="lazy"></button>
+      <button type="button" class="card-img" data-quick="${p.id}" aria-label="Chọn size cho ${p.name}"><img src="${p.image}" alt="${p.name}" width="720" height="960" loading="lazy"></button>
       ${badge}
       <button type="button" class="heart${on ? ' on' : ''}" data-wish="${p.id}" aria-pressed="${on}" aria-label="Yêu thích ${p.name}">${HEART}</button>
     </div>

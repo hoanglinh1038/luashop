@@ -10,7 +10,7 @@ CÁC TRANG
 FILE
 - style.css: màu, chữ, nút theo style guide (nền #FFFBFA, chữ #3A2430, nút #C2456E, viền #E2C8C3, Playfair Display + Be Vietnam Pro)
 - app.js: dữ liệu 12 sản phẩm theo mockup, lọc size/màu/giá, sắp xếp, tìm kiếm, Quick add, xem nhanh giỏ hàng, yêu thích
-- images/: hình minh hoạ quần áo dạng SVG giống mockup (p01–p12 là ảnh sản phẩm)
+- images/: ảnh chụp quần áo (p01–p12 là ảnh sản phẩm, hero/about/cat-*/promo là ảnh trang chủ)
 
 GHÉP VỚI PHẦN CỦA ANH TÚ (VIỆC 11, 12)
 - Giỏ hàng vẫn lưu ở localStorage, key "lua_cart_v1", mảng JSON:
@@ -30,5 +30,16 @@ CHẠY THỬ
 - Ô đăng ký email và hộp nhận mã là bản demo, chưa gửi email thật.
 
 ĐƯA LÊN GITHUB PAGES
-- Chép toàn bộ thư mục này đè lên repo lua-shop, xoá 4 ảnh cũ images/0.jpg, 1.jpg, 2.jpg, 3.jpg, rồi commit và push.
+- Chép toàn bộ thư mục này đè lên repo rồi commit và push.
 - Settings > Pages chọn nhánh chứa index.html.
+
+ẢNH
+Toàn bộ ảnh lấy từ Unsplash (unsplash.com), giấy phép Unsplash: dùng miễn phí, không bắt buộc ghi nguồn.
+Ảnh đã được cắt lại theo tỉ lệ khung trên web. Ảnh gốc:
+p01 photo-1775234576198-a1c680241c07 · p02 photo-1776633733518-d81137214dc9 · p03 photo-1577660002965-04865592fc60
+p04 photo-1785354985994-ca7f1e3f316b · p05 photo-1687825515654-23620796760c · p06 photo-1762343041573-aa2827852bc9
+p07 photo-1683126257977-5142e52acc7e · p08 photo-1789110853398-539d78dd63bc · p09 photo-1473286835901-04adb1afab03
+p10 photo-1762154057377-cc9d3dd6900c · p11 photo-1777713272516-e7b2216fe15e · p12 photo-1789110853872-f416085557fa
+hero photo-1664333570948-cb94f2985827 · about photo-1490481651871-ab68de25d43d · promo photo-1529635457390-aa69ba54d77d
+cat-top photo-1764271692129-767f58952c26 · cat-bottom photo-1789110520410-4fce7246f844 · cat-dress photo-1640923160720-35dddb6348ab
+(mở bằng https://images.unsplash.com/<mã ảnh>)
